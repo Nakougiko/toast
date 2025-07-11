@@ -1,0 +1,19 @@
+{
+  "name": "@lukasgoulois/toast",
+  "version": "1.0.0",
+  "description": "Lightweight vanilla JS toast notifications",
+  "main": "toast.js",
+  "type": "module",
+  "files": ["toast.js", "toast.css"],
+  "author": "Lukas Goulois",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nakougiko/toast"
+  },
+  "keywords": ["toast", "notification", "vanilla-js", "component", "ui"],
+  "homepage": "https://github.com/Nakougiko/toast#readme",
+  "bugs": {
+    "url": "https://github.com/Nakougiko/toast/issues"
+  }
+}
