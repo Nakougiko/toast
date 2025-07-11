@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Toast Demo – @lukasgoulois/toast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Import CSS -->
+  <link rel="stylesheet" href="./toast.css" />
+
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f0f0f0;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    button {
+      margin: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      color: white;
+    }
+
+    .btn-info {
+      background-color: #3498db;
+    }
+
+    .btn-success {
+      background-color: #2ecc71;
+    }
+
+    .btn-error {
+      background-color: #e74c3c;
+    }
+
+    .btn-long {
+      background-color: #6e2f18;
+    }
+
+    .btn-random {
+      background-color: #f39c12;
+    }
+
+    .btn-custom {
+      background-color: #8e44ad;
+    }
+    
+    .toast-custom {
+      background-color: #8e44ad;
+      color: white;
+    }
+
+    .toast-long {
+      background-color: #6e2f18;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Toast Notification Demo</h1>
+
+  <button class="btn-info" onclick="showToast('Info toast 👀', 'info')">Info Toast</button>
+  <button class="btn-success" onclick="showToast('Success toast 🎉', 'success')">Success Toast</button>
+  <button class="btn-error" onclick="showToast('Error toast 🚫', 'error')">Error Toast</button>
+  <button class="btn-long" onclick="showToast('This toast lasts 6s ⏳', 'long', 6000, 'middle-right')">Long Duration</button>
+  <button class="btn-custom" onclick="showToast('Custom toast 🎨', 'custom', 3000, 'top-right')">Custom Position</button>
+
+  <!-- Import JS -->
+  <script type="module">
+    import { showToast } from './toast.js';
+    window.showToast = showToast;
+  </script>
+</body>
+</html>
