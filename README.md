@@ -21,9 +21,9 @@ Automatically creates its container, supports dynamic positioning, and allows fu
 ### CDN
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nakougiko/toast@1.0.0/toast.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@lukasgoulois/toast@1.0.0/toast.css" />
 <script type="module">
-  import { showToast } from "https://cdn.jsdelivr.net/gh/Nakougiko/toast@1.0.0/toast.js";
+  import { showToast } from "https://cdn.jsdelivr.net/npm/@lukasgoulois/toast@1.0.0/toast.js";
 
   showToast("Hello world!", "success", 3000, "top-left");
 </script>
